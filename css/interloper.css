@@ -1,0 +1,8 @@
+@import 'colors.css';
+body{
+  height: 100vh;
+  background-image: url("../img/interloper-vibes.png");
+  background-repeat: no-repeat;
+  background-size:100vw 100vh;
+  background-position: left top;
+}

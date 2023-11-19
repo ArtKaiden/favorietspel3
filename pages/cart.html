@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1, user-scalable=0" />
+    <link rel="stylesheet" href="../css/mainstyle.css" />
+    <link rel="stylesheet" href="../css/mobile/mainstyle-mobile.css" />
+    <link rel="stylesheet" href="../css/cart.css" />
+    <link rel="stylesheet" href="../fonts/fonts.css" />
+
+    <title>Order</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="./hub.html"><img src="../img/ship-outline.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="./twins.html"><img src="../img/Hourglass-twins-outline.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="./timber.html"><img src="../img/Timber-Hearth-outline.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="./brittle.html"><img src="../img/Brittle-hollow-outline.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="./giants.html"><img src="../img/Giants-deep-outline.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="./bramble.html"><img src="../img/dark-bramble-outline.png" alt="" /></a>
+          </li>
+        </ul>
+        <div class="grip"><a class="grip-link" href="./hub.html"></a></div>
+        <ul>
+          <li>
+            <a href="./characters.html"><img src="../img/characters-outline.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="./ratings.html"><img src="../img/rating-outline.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="./order.html"><img src="../img/order.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="./about.html"><img src="../img/about-outline.png" alt="" /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="scrollable">
+        <section>
+          <article>
+            <div class="form">
+              <img src="../img/box-pc.png" alt="" />
+              <div>
+                <label for="order-1">Aantal:</label>
+                <input type="number" name="order-outer-wilds-pc" id="order-1" min="1" max="99" />
+              </div>
+            </div>
+            <div class="form">
+              <img src="../img/box-ps4.png" alt="" />
+              <div>
+                <label for="order-2">Aantal:</label>
+                <input type="number" name="order-outer-wilds-ps" id="order-2" min="1" max="99" />
+              </div>
+            </div>
+            <div class="form">
+              <img src="../img/box-xbox.png" alt="" />
+              <div>
+                <label for="order-3">Aantal:</label>
+                <input type="number" name="order-outer-wilds-xbox" id="order-3" min="1" max="99" />
+              </div>
+            </div>
+          </article>
+        </section>
+        <section>
+          <article>
+            <h2>Overzicht:</h2>
+            <h3>Artikelen:</h3>
+            <p class="items-1"></p>
+            <p class="items-2"></p>
+            <p class="items-3"></p>
+            <h3>Totaal:</h3>
+            <p class="total"></p>
+            <h2>Vul hier Jouw gegevens in:</h2>
+            <form method="POST" action="https://jkorpela.fi/cgi-bin/echo.cgi" autocomplete="on">
+              <div>
+                <label for="email">E-mail</label>
+                <input name="email" type="email" id="email" required />
+              </div>
+              <div>
+                <label for="first-name">Voornaam</label>
+                <input name="first-name" type="text" id="first-name" minlength="2" required />
+              </div>
+              <div>
+                <label for="last-name">Achternaam</label>
+                <input name="last-name" type="text" id="last-name" minlength="2" required />
+              </div>
+              <div>
+                <label for="street">Straat</label>
+                <input name="street" type="text" id="street" minlength="2" required />
+                <label for="number">Nummer</label>
+                <input name="number" type="number" id="number" min="1" required />
+              </div>
+              <div>
+                <label for="city">Stad</label>
+                <input name="city" type="text" id="city" required />
+                <label for="zip-code">Postcode</label>
+                <input name="zip-code" type="number" id="zip-code" min="1000" max="9999" required />
+              </div>
+              <div>
+                <label for="phone-number">Telefoonnummer</label>
+                <input name="phone-number" type="tel" id="phone-number" />
+              </div>
+              <div>
+                <h3>Verzend Methode:</h3>
+                <label for="delivery">thuislevering:</label>
+                <input name="Shipping" type="radio"  value="delivery" id="delivery" checked />
+                <label for="pick-up">Pick-Up Point:</label>
+                <input name="Shipping" type="radio" value="pickup" id="pick-up" />
+              </div>
+              <button>Bestel</button>
+              <input type="number" name="pc-amount" class="invisible pc-amount">
+              <input type="number" name="ps-amount" class="invisible ps-amount">
+              <input type="number" name="xbox-amount" class="invisible xbox-amount">
+            </form>
+          </article>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div></div>
+      <small>&copy;Cornillie Jeffrey</small>
+    </footer>
+    <script src="../script/cart.js"></script>
+  </body>
+</html>

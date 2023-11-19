@@ -1,0 +1,15 @@
+@import "./colors.css";
+body{
+  height: 100vh;
+  background-image: url(../img/Hearthian-Founders.webp);
+  background-repeat: no-repeat;
+  background-size:100% 100%;
+  background-position: left top;
+}
+
+nav img{
+  position: absolute;
+  top: 1vh;
+  left: 40vw;
+  width: 10vw;
+}

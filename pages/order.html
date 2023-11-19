@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 maximum-scale=1, user-scalable=0"
+    />
+    <link rel="stylesheet" href="../css/mainstyle.css" />
+    <link rel="stylesheet" href="../css/mobile/mainstyle-mobile.css" />
+    <link rel="stylesheet" href="../css/order.css">
+    <link rel="stylesheet" href="../fonts/fonts.css" />
+
+    <title>Order</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="./hub.html"
+              ><img src="../img/ship-outline.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="./twins.html"
+              ><img src="../img/Hourglass-twins-outline.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="./timber.html"
+              ><img src="../img/Timber-Hearth-outline.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="./brittle.html"
+              ><img src="../img/Brittle-hollow-outline.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="./giants.html"
+              ><img src="../img/Giants-deep-outline.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="./bramble.html"
+              ><img src="../img/dark-bramble-outline.png" alt=""
+            /></a>
+          </li>
+        </ul>
+        <div class="grip"><a class="grip-link" href="./hub.html"></a></div>
+        <ul>
+          <li>
+            <a href="./characters.html"
+              ><img src="../img/characters-outline.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="./ratings.html"
+              ><img src="../img/rating-outline.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="./order.html"><img src="../img/order.png" alt="" /></a>
+          </li>
+          <li><a href="./about.html"><img src="../img/about-outline.png" alt="" /></a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Order the game</h1>
+      <article>
+        <h2>Order on our website</h2>
+        <div class="order">
+          <div class="form">
+            <img src="../img/box-pc.png" alt="" />
+            <label for="order-1">Aantal:</label>
+            <input type="number" name="order-outer-wilds-pc" id="order-1" min="1" max="99" value="1" />
+            <button onclick="AddToCart(1)">Bestel</button>
+          </div>
+          <div class="form">
+            <img src="../img/box-ps4.png" alt="" />
+            <label for="order-2">Aantal:</label>
+            <input type="number" name="order-outer-wilds-ps" id="order-2" min="1" max="99" value="1" />
+            <button onclick="AddToCart(2)">Bestel</button>
+          </div>
+          <div class="form">
+            <img src="../img/box-xbox.png" alt="" />
+            <label for="order-3">Aantal:</label>
+            <input type="number" name="order-outer-wilds-xbox" id="order-3" min="1" max="99" value="1" />
+            <button onclick="AddToCart(3)">Bestel</button>
+          </div>
+        </div>
+    </article>
+    <article>
+      <h2>Order on Steam:</h2>
+      <iframe
+        src="https://store.steampowered.com/widget/753640"
+        frameborder="0"
+        width="90%"
+        height="190">
+      </iframe>
+    </article>
+    <section>
+      <article>
+        <ul>
+          <li class="pc-cart">Pc: 0</li>
+          <li class="ps-cart">PS4: 0</li>
+          <li class="xbox-cart">XBOX One: 0</li>
+          <li><button onclick="ToCart()">Naar winkelwagentje</button></li>
+        </ul>
+      </article>
+    </section>
+    </main>
+    <footer><div></div> <small>&copy;Cornillie Jeffrey</small></footer>
+    <script src="../script/order.js"></script>
+  </body>
+</html>

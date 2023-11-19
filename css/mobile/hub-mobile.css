@@ -1,0 +1,55 @@
+@import "../colors.css";
+@media screen and (max-width: 768px) {
+  body{
+    height: 100vh;
+    background-image: url(../../img/mobile/Chart2-no-planets-mobile.png);
+  }
+
+  .twins{
+    height: 5vh;
+    width: 16vw;
+    left: 43vw;
+    top: 78.3vh;
+    background-image: url(../../img/mobile/twins-img-mobile.png);
+  }
+  .timber{
+    height: 6.5vh;
+    width: 12vw;
+    left: 45vw;
+    top: 64.8vh;
+    background-image: url(../../img/mobile/timber-hearth-img-mobile.png);
+  } 
+  .hollow{
+    height: 8.7vh;
+    width: 16vw;
+    left: 43.7vw;
+    top: 44.9vh;
+    background-image: url(../../img/mobile/brittle-hollow-img-mobile.png);
+  } 
+
+  .giants{
+    height: 13vh;
+    width: 26vw;
+    left: 38vw;
+    top: 21vh;
+    background-image: url(../../img/mobile/giants-deep-img-mobile.png);
+  }  
+  .bramble{
+    height: 15vh;
+    width: 24.9vw;
+    left: 36.3vw;
+    top: 1.7vh;
+    background-image: url(../../img/mobile/dark-bramble-img-mobile.png);
+  } 
+  .interloper{
+    height: 19vh;
+    width: 18.7vw;
+    left: 2.9vw;
+    top: 0.2vh;
+    background-image: url(../../img/mobile/interloper-img-mobile.png);
+  }
+  footer div{
+    width: 50vw;
+    height: 15vh;
+  }
+}

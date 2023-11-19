@@ -1,0 +1,11 @@
+body {
+  --line-color: white;
+  --text-color:rgb(255, 255, 255);
+  --header-color: rgb(248, 140, 0);
+  --div-color: rgba(18, 18, 18, 0.456);
+  --important-color: rgb(255, 255, 0);
+  --current-nav-text-color: black;
+  --current-nav-color: yellow;
+  --footer-background-color:rgba(0, 0, 0, 0.6) ;
+  --footer-color:rgba(255,255,255,0.8) ;
+}

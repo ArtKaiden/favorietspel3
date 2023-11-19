@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1, user-scalable=0">
+  <title>Campfire</title>
+  <link rel="stylesheet" href="../css/mainstyle.css">
+  <link rel="stylesheet" href="../css/elevator.css">
+  <link rel="stylesheet" href="../fonts/fonts.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a class="to-campfire clickable-link" href="../index.html"></a>
+    </nav>
+</header>
+  <main>
+    <img class="elevator-button clickable" src="../img/elevator-button.png" alt="">
+    <p class="hover-me" >Toon klikbaar</p>
+    <article class="invisible">
+        <label id="code-label" for="code">Voer lanceercode in</label>
+        <input id="code" type="number" min="0" max="9999">
+        <button type="button" onclick="CheckCode()">Bevestig code</button>
+      <p id="result"></p>
+    </article>
+    <article class="up invisible">
+      <a href="./timber.html"><h2>Naar het schip</h2></a>
+    </article>
+
+  </main>
+  <footer><div></div> <small>&copy;Cornillie Jeffrey</small></footer>
+  <script src="../script/show-click.js"></script>
+  <script src="../script/codecheck.js"></script>
+  <script src="../script/show-clickable-link.js"></script>
+</body>
+</html>

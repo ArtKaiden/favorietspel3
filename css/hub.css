@@ -1,0 +1,81 @@
+@import "colors.css";
+@media screen and (min-width: 768px) {
+  body{
+    background-image: url(../img/Chart2-no-planets.png);
+  }
+  .twins{
+    height: 12.3vh;
+    width: 3.6vw;
+    left: 18.9vw;
+    top: 44.25vh;
+    background-image: url(../img/twins-img.png);
+  }
+  main li{
+    background-size: 100% 100%;
+    display: flex;
+    position: absolute;
+  }
+  li a{
+    width: 100%;
+    height: 100%;
+    flex-grow: 1;
+  }
+  .timber{
+    height: 9.9vh;
+    width: 5.9vw;
+    left: 30.7vw;
+    top: 45.9vh;
+    background-image: url(../img/timber-hearth-img.png);
+  } 
+  .hollow{
+    height: 12.5vh;
+    width: 7.6vw;
+    left: 47.7vw;
+    top: 44.5vh;
+    background-image: url(../img/brittle-hollow-img.png);
+  } 
+
+  .giants{
+    height: 24vh;
+    width: 14.4vw;
+    left: 65.05vw;
+    top: 38.8vh;
+    background-image: url(../img/giants-deep-img.png);
+  }  
+  .bramble{
+    height: 25.3vh;
+    width: 15.5vw;
+    left: 83.15vw;
+    top: 37.25vh;
+    background-image: url(../img/dark-bramble-img.png);
+  } 
+  .interloper{
+    height: 19vh;
+    width: 18.7vw;
+    left: 81.3vw;
+    top: 3.4vh;
+    background-image: url(../img/interloper-img.png);
+  }
+}
+
+body{
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size:100% 100%;
+  background-position: left top;
+  color: var(--text-color);
+}
+main li{
+  list-style: none;
+  background-size: 100% 100%;
+  display: flex;
+  position: absolute;
+}
+main li a{
+  width: 100%;
+  height: 100%;
+  flex-grow: 1;
+}
+/* main div a img{
+  position: absolute;
+} */

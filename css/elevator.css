@@ -1,0 +1,56 @@
+@import "./colors.css";
+body{
+  height: 100vh;
+  background-image: url(../img/mobile/elevator-mobile.png);
+  background-repeat: no-repeat;
+  background-size:100% 100%;
+  background-position: left top;
+}
+.to-campfire{
+  width: 90vw;
+  height: 7vh;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.elevator-button{
+    position: absolute;
+    height: 10vh;
+    width: 15vw;
+    top: 58.2vh;
+    left: 30vw;
+    /* visibility: hidden; */
+}
+a{
+  text-decoration: none;
+  color: var(--text-color);
+}
+a h2{
+  margin: auto;
+}
+article{
+  margin-top: 15vh;
+  width: 30vw;
+}
+input{
+  border-radius: 20px;
+  background-color: gray;
+
+}
+button{
+  border-radius: 20px;
+  background-color: dimgray;
+}
+
+
+@media screen and (min-width: 768px) {
+  body{
+    background-image: url(../img/elevator.png);
+  }
+  .elevator-button{
+    height: 14vh;
+    width: 7.1vw;
+    top: 53.75vh;
+    left: 41.3vw;
+}
+}
