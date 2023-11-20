@@ -10,23 +10,15 @@
     top: 44.25vh;
     background-image: url(../img/twins-img.png);
   }
-  main li{
-    background-size: 100% 100%;
-    display: flex;
-    position: absolute;
-  }
-  li a{
-    width: 100%;
-    height: 100%;
-    flex-grow: 1;
-  }
+
   .timber{
     height: 9.9vh;
     width: 5.9vw;
     left: 30.7vw;
     top: 45.9vh;
     background-image: url(../img/timber-hearth-img.png);
-  } 
+  }
+
   .hollow{
     height: 12.5vh;
     width: 7.6vw;
@@ -68,14 +60,17 @@ body{
 main li{
   list-style: none;
   background-size: 100% 100%;
-  display: flex;
   position: absolute;
 }
 main li a{
+  display: block;
   width: 100%;
   height: 100%;
-  flex-grow: 1;
 }
-/* main div a img{
-  position: absolute;
-} */
+main li p{
+  visibility: hidden;
+  margin: 0;
+}
+main li:hover>p{
+  visibility: visible;
+}

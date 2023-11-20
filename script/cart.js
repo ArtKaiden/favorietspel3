@@ -13,11 +13,34 @@ let pcAmount = sessionStorage.getItem("pcAmount");
 let psAmount = sessionStorage.getItem("psAmount");
 let xboxAmount = sessionStorage.getItem("xboxAmount");
 
-order1.value = pcAmount;
-order2.value = psAmount;
-order3.value = xboxAmount;
-UpdateItems();
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+//////////////////////functions//////////////////////////
+function UpdateItems() {
+  CheckForNullOr0();
+  items1.textContent = `Outer wilds PC: ${pcAmount}`;
+  items2.textContent = `Outer wilds PS4: ${psAmount}`;
+  items3.textContent = `Outer wilds XBOX ONE: ${xboxAmount}`;
+  total.textContent = `aantal artikelen: ${Number(pcAmount) + Number(psAmount) + Number(xboxAmount)}`;
+  pcAmountInput.value = pcAmount;
+  psAmountInput.value = psAmount;
+  xboxAmountInput.value = xboxAmount;
+  sessionStorage.setItem("pcAmount", pcAmount);
+  sessionStorage.setItem("psAmount", psAmount);
+  sessionStorage.setItem("xboxAmount", xboxAmount);
+}
+function CheckForNullOr0() {
+  if (pcAmount == null || pcAmount === "") pcAmount = 0;
+  if (psAmount == null || psAmount === "") psAmount = 0;
+  if (xboxAmount == null || xboxAmount === "") xboxAmount = 0;
+}
+//////////////////////functions//////////////////////////
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
 
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+//////////////////Event handlers////////////////////////
 order1.addEventListener("input", () => {
   pcAmount = order1.value;
   UpdateItems();
@@ -31,15 +54,15 @@ order3.addEventListener("input", () => {
   UpdateItems();
 });
 
-function UpdateItems() {
-  items1.textContent = `Outer wilds PC: ${pcAmount}`;
-  items2.textContent = `Outer wilds PS4: ${psAmount}`;
-  items3.textContent = `Outer wilds XBOX ONE: ${xboxAmount}`;
-  total.textContent = `aantal artikelen:${Number(pcAmount) + Number(psAmount) + Number(xboxAmount)}`;
-  pcAmountInput.value = pcAmount;
-  psAmountInput.value = psAmount;
-  xboxAmountInput.value = xboxAmount;
-  sessionStorage.setItem("pcAmount", pcAmount);
-  sessionStorage.setItem("psAmount", psAmount);
-  sessionStorage.setItem("xboxAmount", xboxAmount);
-}
+//////////////////Event handlers////////////////////////
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+
+
+
+
+CheckForNullOr0();
+order1.value = pcAmount;
+order2.value = psAmount;
+order3.value = xboxAmount;
+UpdateItems();

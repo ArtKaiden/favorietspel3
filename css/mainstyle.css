@@ -98,7 +98,7 @@ main{
   border: solid var(--line-color);
   opacity: 30%;
   border-radius: 20px;
-  z-index: 5;
+  z-index: 10;
 }
 article{
   text-align: center;

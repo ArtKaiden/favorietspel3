@@ -21,7 +21,7 @@ article{
   justify-content: space-between;
   align-items: center;
   box-shadow: 0px 0px 5px gray;
-  margin-left: 0;
+  margin-left: 0.1rem;
 }
 strong{
   font-size: 5rem;
